@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/cardview_light_background"
+    tools:context=".PriceDetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        style="@style/Pricetitle"
+        android:text="Gold Rate (Per Tola)"/>
+    <LinearLayout
+        style="@style/etPriceLayout">
+
+    <EditText
+        android:id="@+id/etgoldprice"
+        android:hint="Enter gold price of 1 tola"
+        style="@style/etPriceDetail"/>
+
+    </LinearLayout>
+     <TextView
+            style="@style/Pricetitle"
+            android:text="Silver Rate (Per Tola)"/>
+        <LinearLayout
+            style="@style/etPriceLayout">
+
+        <EditText
+            android:id="@+id/etsilverprice"
+            android:hint="Enter silver price of 1 tola"
+            style="@style/etPriceDetail"/>
+
+        </LinearLayout>
+    <TextView
+            style="@style/Pricetitle"
+            android:text="Property Rate (Per Marla)"/>
+        <LinearLayout
+            style="@style/etPriceLayout">
+
+        <EditText
+            android:id="@+id/etmarlaprice"
+            android:hint="Enter property price of 1 marla"
+            style="@style/etPriceDetail"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Save these rates"/>
+
+    <LinearLayout
+        android:id="@+id/llsearch"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0F53FF"
+            android:text="@string/my_underlined_text"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_3"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:background="@drawable/btn_bg_clr"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/arr"
+        android:layout_alignParentBottom="true"
+        android:paddingEnd="15dp"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
+</ScrollView>

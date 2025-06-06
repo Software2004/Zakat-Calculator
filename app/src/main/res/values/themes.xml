@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ZakatCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="fontFamily">@font/comfortia</item>
+    </style>
+
+    <style name="Theme.ZakatCalculator" parent="Base.Theme.ZakatCalculator" />
+    <style name="mainActivity" parent="Base.Theme.ZakatCalculator" >
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="etPriceDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textSize">14dp</item>
+
+
+    </style>
+    <style name="etPriceLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/outline_rnd</item>
+
+
+    </style>
+    <style name="Pricetitle" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+
+    </style>
+
+
+
+</resources>
